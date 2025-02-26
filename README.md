@@ -6,11 +6,11 @@
 
 ## 🌟 Features
 
-- 🔐 User Authentication
+- 🔒 User Authentication
   - Login, Signup, Logout
   - JWT & Refresh Tokens
   - Change Password
-- 📹 Video Management
+- 📺 Video Management
   - Upload Videos
   - Like & Dislike
   - Comment & Reply
@@ -20,18 +20,18 @@
   - Update Avatar & Cover Image
   - Edit Account Details
 - ⏳ Watch History Tracking
-- 📜 Secure API with JWT Authentication
+- 🐜 Secure API with JWT Authentication
 
 ## 🛠️ Technologies Used
 
 - **Backend Framework:** ⚡ Node.js with Express.js
-- **Database:** 🗄️ MongoDB with Mongoose
+- **Database:** 🐄️ MongoDB with Mongoose
 - **Authentication:** 🔑 JWT, bcrypt
-- **File Uploads:** 📤 Multer
+- **File Uploads:** 📄 Multer
 - **Middleware:** 🛡️ Express Middleware (CORS, Body-parser, Helmet, etc.)
 - **Storage & Media Processing:** ☁️ Cloudinary
 - **Real-time Updates:** 🔄 WebSockets
-- **Deployment:** 🚢 Docker, ☁️ AWS EC2, or 🚀 Heroku
+- **Deployment:** 🛦 Docker, ☁️ AWS EC2, or 🚀 Heroku
 
 ## 📚 Libraries Used
 
@@ -45,6 +45,12 @@
 - **mongoose** – ODM (Object Data Modeling) for MongoDB with schema validation.
 - **mongoose-aggregate-paginate-v2** – Enables pagination for MongoDB aggregation queries.
 - **multer** – Handles file uploads efficiently.
+
+---
+
+## 💎 Database Model
+
+Check out the detailed **DB Model** here: [Eraser.io Database Model](https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj)
 
 ---
 
@@ -83,9 +89,9 @@ npm run dev
 
 ---
 
-## 📡 API Routes
+## 💪 API Routes
 
-### **🔐 Authentication Routes**
+### **🔒 Authentication Routes**
 
 ```js
 router.route("/login").post(loginUser);
@@ -104,7 +110,7 @@ router.route("/cover-image").patch(verifyJWT, upload.single("coverImage"), updat
 router.route("/c/:username").get(verifyJWT, getUserChannelProfile);
 ```
 
-### **📜 Watch History Route**
+### **🐜 Watch History Route**
 
 ```js
 router.route("/history").get(verifyJWT, getWatchHistory);
@@ -114,14 +120,15 @@ router.route("/history").get(verifyJWT, getWatchHistory);
 
 ## 🤝 Contributing
 
-1. 🍴 Fork the repository
+1. 🍔 Fork the repository
 2. 🌿 Create a new branch (`feature-branch`)
-3. 💾 Commit your changes
+3. 📂 Commit your changes
 4. 🚀 Push to the branch
-5. 🔁 Open a Pull Request
+5. 🔄 Open a Pull Request
 
 ---
 
 ## 📧 Contact
 
 For any issues or suggestions, feel free to create an issue or reach out to the maintainers. 🚀
+
